@@ -26,14 +26,22 @@ public class Raffle {
             System.out.println("Original List : \n" + name + "\n");
 
 
-
             /**
              * Random Style
              * Random return int
              */
 
-            Random r = new Random();
-            System.out.println("Random: \n" + name.get(r.nextInt(name.size())));
+            /**
+             * Random
+             */
+//            Random r = new Random();
+//            System.out.println("Random: \n" + name.get(r.nextInt(name.size())));
+
+            /**
+             * Math.random
+             */
+            int randomIndex = (int) (Math.random() * name.size());
+            System.out.println("Random: \n" + name.get(randomIndex));
 
             while (true) {
                 System.out.print("q to quit / [enter] to continue: ");
@@ -42,8 +50,15 @@ public class Raffle {
                 if (choose.equals("q")) {
                     break;
                 }
-                Random r1 = new Random();
-                System.out.println("Random: \n" + name.get(r1.nextInt(name.size())));
+
+//                Random r1 = new Random();
+//                System.out.println("Random: \n" + name.get(r1.nextInt(name.size())));
+
+                /**
+                 * Math.random
+                 */
+                int randomIndex1 = (int) (Math.random() * name.size());
+                System.out.println("Random: \n" + name.get(randomIndex1));
             }
 
 //            /**
