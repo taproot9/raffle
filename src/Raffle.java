@@ -40,8 +40,7 @@ public class Raffle {
             /**
              * Math.random
              */
-            int randomIndex = (int) (Math.random() * name.size());
-            System.out.println("Random: \n" + name.get(randomIndex));
+            System.out.println("Random: \n" + name.get((int) (Math.random() * name.size())));
 
             while (true) {
                 System.out.print("q to quit / [enter] to continue: ");
@@ -57,8 +56,7 @@ public class Raffle {
                 /**
                  * Math.random
                  */
-                int randomIndex1 = (int) (Math.random() * name.size());
-                System.out.println("Random: \n" + name.get(randomIndex1));
+                System.out.println("Random: \n" + name.get((int) (Math.random() * name.size())));
             }
 
 //            /**
